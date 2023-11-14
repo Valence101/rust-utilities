@@ -23,3 +23,11 @@ Learning rust: https://doc.rust-lang.org/book/ch01-01-installation.html
 - `cargo run` - will also automatically build if src files changed
 - `cargo check` - to compile without overwriting your exe (to check for compilation errors)
 
+### 2
+
+- `use std::io;` - library import
+- `let` - declare immutable variable
+- `let mut` - declare mutable variable
+- `::` - allows traversing library > class/type > function
+- `&` indicates "by reference" for input argument - e.g. `io::stdin().read_line(&mut guess);`
+- [TODO] Generating a secret number
