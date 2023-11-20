@@ -34,3 +34,25 @@ Learning rust: https://doc.rust-lang.org/book/ch01-01-installation.html
 - [crates.io](https://crates.io/) - public package (crate) manager - like nuget.org or npmjs.com
 - `cargo update` - updates packages to latest bug fix (based upon semantic versioning)
   - you will need to update the `Cargo.toml` file to explicitly upgrade to new feature versions or breaking versions
+
+### 3
+
+Common Programming Concepts
+
+#### 3.1 - Variables and Mutability
+
+- `let` - to declare immutable variable
+- `const` - to declare a constant, must have a data type annotation
+  - unlike C#, constants can be declared like so: `const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;` - where the compiler will evaluate the expression as part of the compilation, this way the source code is easier to understand (for a human) - but is ultimately compiled down to the constant we are used to seeing in other languages.s
+- `let x = 5; let x = x + 1;` - this is called shadowing
+  - this allows us to keep `x` as immutable, while performing transformation operations on it (thanks to the `let` keyword)
+  - as part of this, you can also change the data type of the variable (very cool), e.g.:
+  ```rust
+  let spaces = "   ";
+  let spaces = spaces.len();
+  ```
+  - shadowing can also be used with inner scopes and the values are maintained independent of the outer scope
+
+#### 3.2 - Data Types
+
+- 
