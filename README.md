@@ -34,4 +34,3 @@ Learning rust: https://doc.rust-lang.org/book/ch01-01-installation.html
 - [crates.io](https://crates.io/) - public package (crate) manager - like nuget.org or npmjs.com
 - `cargo update` - updates packages to latest bug fix (based upon semantic versioning)
   - you will need to update the `Cargo.toml` file to explicitly upgrade to new feature versions or breaking versions
-- [TODO] Generating a secret number
