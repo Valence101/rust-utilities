@@ -71,3 +71,15 @@ Common Programming Concepts
       - allocated to the stack, not heap
       - strongly typed: `let a: [i32; 5] = [1, 3, 44, 34, 44];`
       - initialized with a default value of '3': `let a: [3; 5];`
+
+#### 3.3 - Functions
+
+- `fn` keyword is used to declare a function
+- order of function declarations do not matter
+- `argument` - the concrete value passed into the `parameter` of the function
+- Statements versus Expressions
+  - Statements do not return a value
+    - end with a semi-colon
+  - Expressions return a value, and thus can be used to declare variables as part of a statement
+    - do not end with a semi-colon
+- functions with return values (expressions) must be declared using `->` type declarations: `fn my_function() -> i32 { 5 }` - this function returns the 32 bit integer value of `5`
