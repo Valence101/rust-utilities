@@ -83,3 +83,20 @@ Common Programming Concepts
   - Expressions return a value, and thus can be used to declare variables as part of a statement
     - do not end with a semi-colon
 - functions with return values (expressions) must be declared using `->` type declarations: `fn my_function() -> i32 { 5 }` - this function returns the 32 bit integer value of `5`
+
+#### 3.4 - Comments
+
+- `//` - nuff' said
+
+#### 3.5 - Control Flow
+
+- `if` expressions are _not_ wrapped in parentheses
+- `if` expressions must return a `bool` data type (unlike JavaScript or Ruby)
+- code blocks within `if` expressions are sometimes called "arms", same with `match` statement code blocks
+- `let number = if 3 > 7 { 5 } else { 6 };` - this is a valid use of an `if` expression, because it is an expression, it returns a value (unlike a statement)
+- loops:
+  - `loop`
+  - `while`
+  - `for`
+  - loop labels can be used to break out of outer scoped loops from within inner scoped loops
+  - spread and reversal functions can be handy in for loops: `for number in (1..4).rev() {}`
